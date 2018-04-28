@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;
+			padding: 0;}
+			p{
+				background: url(img/PC.jpg);
+				background: url(img/middle.jpg);
+			}
+			.pc{
+				margin: auto;
+				display: block;
+			}
+			.middle{
+				width: 100%;
+				display: none;
+			}
+			@media(max-width:1000px) {
+				.pc{
+					display: none;
+				}
+				.middle{
+				display: block;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pc"><img src="img/PC.jpg" width="100%"/></div>
+		<div class="middle"><img src="img/middle.jpg" width="100%"/></div>
+	</body>
+</html>
