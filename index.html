@@ -3,33 +3,227 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<style type="text/css">
-			*{margin: 0;
-			padding: 0;}
-			p{
-				background: url(img/PC.jpg);
-				background: url(img/middle.jpg);
-			}
-			.pc{
-				margin: auto;
-				display: block;
-			}
-			.middle{
-				width: 100%;
-				display: none;
-			}
-			@media(max-width:1000px) {
-				.pc{
-					display: none;
-				}
-				.middle{
-				display: block;
-			}
-			}
-		</style>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	</head>
 	<body>
-		<div class="pc"><img src="img/PC.jpg" width="100%"/></div>
-		<div class="middle"><img src="img/middle.jpg" width="100%"/></div>
+		<div class="wayboo">
+			<div class="wayboo_top">
+				<div class="wayboo_round">
+					<div class="round"><img src="img/round.png"/></div>
+					<div>
+						<h3>商机数</h3>
+						<p>最近12个月累计收到的商机总数</p>
+						<h1>257,783</h1>
+					</div>
+				</div>
+				<div class="wayboo_bottom clearfix">
+					<div class="wayboo_bottomlist">
+						<p>回拨电话</p>
+						<div>
+							<img src="img/tel.png"/>
+							<i></i>
+							<span>1452</span>
+						</div>
+					</div>
+					<div class="wayboo_bottomlist">
+						<p>在线咨询</p>
+						<div>
+							<img src="img/txt1.png"/>
+							<i></i>
+							<span>1452</span>
+						</div>
+					</div>
+					<div class="wayboo_bottomlist">
+						<p>在线留言</p>
+						<div>
+							<img src="img/txt2.png"/>
+							<i></i>
+							<span>1452</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wayboo_middle">
+				<div class="wayboo_map clearfix">
+					<div class="wayboo_mapLeft">
+						<h1>精准流量热力图 <img src="img/jian.png"/></h1>
+						<p>城市排行榜</p>
+						<div class="wayboo_maplist">
+							<div><p></p></div>
+							<span>山东</span>
+						</div>
+						<div class="wayboo_maplist">
+							<div><p style="width: 88%;"></p></div>
+							<span>北京</span>
+						</div>
+						<div class="wayboo_maplist">
+							<div><p style="width:75%;"></p></div>
+							<span>河北</span>
+						</div>
+						<div class="wayboo_maplist">
+							<div><p style="width: 30%;"></p></div>
+							<span>江苏</span>
+						</div>
+						<div class="wayboo_maplist">
+							<div><p style="width: 90%;"></p></div>
+							<span>广东</span>
+						</div>
+						<div class="wayboo_maplist">
+							<div><p style="width: 50%;"></p></div>
+							<span>河南</span>
+						</div>
+						<div class="wayboo_maplist">
+							<div><p style="width: 60%;"></p></div>
+							<span>浙江</span>
+						</div>
+					</div>
+					<div class="wayboo_mapRight" id="map">
+					</div>
+				</div>
+				<!---->
+				<div class="wayboo_exposure clearfix">
+					<div class="wayboo_exposureLeft">
+						<h1>曝光量 <img src="img/jian.png"/></h1>
+						<p>过去12个月累计数值</p>
+						<div class="wayboo_exposureimg">
+							<h1>
+								15,298,345
+							</h1>
+						</div>
+					</div>
+					<div class="wayboo_exposureRight">
+						<ul class="clearfix">
+							<li>
+								<img src="img/toplist1.jpg"/>
+								<p>43%</p>
+							</li>
+							<li>
+								<img src="img/toplist2.jpg"/>
+								<p>43%</p>
+							</li>
+							<li>
+								<img src="img/toplist3.jpg"/>
+								<p>43%</p>
+							</li>
+							<li>
+								<img src="img/toplist4.jpg"/>
+								<p>43%</p>
+							</li>
+							<li>
+								<img src="img/toplist5.jpg"/>
+								<p>43%</p>
+							</li>
+							<li>
+								<img src="img/toplist6.jpg"/>
+								<p>43%</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!---->
+				<div class="wayboo_click clearfix">
+					<div class="wayboo_clickLeft">
+						<h1>点击量 <img src="img/jian.png"/></h1>
+						<p>过去30天累计数值</p>
+						<h3>1,195</h3>
+						<i></i>
+						<p>过去12个月累计数值</p>
+						<h3 class="h3">1,195</h3>
+					</div>
+					<div class="wayboo_clickRight">
+						<div id="areaAbt">
+							<button class="areaAbtactive">近一月</button>
+							<button>近三月</button>
+							<button>近六月</button>
+							<button>近一年</button>
+						</div>
+						<div id="area"></div>
+					</div>
+				</div>
+				<!---->
+				<div class="wayboo_deal clearfix">
+					<div class="wayboo_dealkLeft">
+						<h1>成交金额 <img src="img/jian.png"/></h1>
+						<p>过去30天累计数值</p>
+						<h3>1,195</h3>
+					</div>
+					<div class="wayboo_dealkRight" id="pie">
+						
+					</div>
+				</div>
+				<!---->
+				<div class="wayboo_table clearfix">
+					<div class="wayboo_tableLeft">
+						<h1>今日实时点击</h1>
+						<div class="tableOne">
+							<table border="0" cellspacing="0" cellpadding="0">
+								<thead>
+									<tr>
+										<th>点击时间</th>
+										<th>受访企业</th>
+										<th>访客位置</th>
+										<th>展示平台</th>
+										<th>流量来源</th>
+									</tr>
+								</thead>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0" class="tbody">
+								<tbody>
+									<tr>
+										<th>09:32</th>
+										<th>威海****公司 山东威海</th>
+										<th>湖北武汉</th>
+										<th>PC端</th>
+										<th>搜索引擎</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="wayboo_tableRight">
+						<h1>今日实时求购商机</h1>
+						<div class="tableTow">
+							<table border="0" cellspacing="0" cellpadding="0">
+								<thead>
+									<tr>
+										<th>求购放</th>
+										<th>供应方</th>
+									</tr>
+								</thead>
+							</table>
+							<table border="0" cellspacing="0" cellpadding="0" class="tbody">
+								<tbody>
+									<tr>
+										<th>河北企业（135****0483）</th>
+										<th>北京悦祥****公司（北京信融二分）</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!---->
+				<div class="wayboo_partner">
+					<h1>合作伙伴 <img src="img/jian.png"/></h1>
+					<ul class="clearfix">
+						<li><img src="img/bottomlist1.jpg"/></li>
+						<li><img src="img/bottomlist2.jpg"/></li>
+						<li><img src="img/bottomlist3.jpg"/></li>
+						<li><img src="img/bottomlist4.jpg"/></li>
+						<li><img src="img/bottomlist5.jpg"/></li>
+						<li><img src="img/bottomlist6.jpg"/></li>
+						<li><img src="img/bottomlist7.jpg"/></li>
+						<li><img src="img/bottomlist8.jpg"/></li>
+						<li><img src="img/bottomlist9.jpg"/></li>
+						<li><img src="img/bottomlist10.jpg"/></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="js/map.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		 <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+		<script src="js/echarts.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

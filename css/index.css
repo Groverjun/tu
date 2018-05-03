@@ -1,0 +1,314 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+body {
+  background: #020d33; }
+
+.wayboo * {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  list-style: none;
+  font-weight: normal;
+  box-sizing: border-box; }
+
+.wayboo {
+  width: 1200px;
+  margin: auto; }
+  .wayboo .wayboo_top .wayboo_round {
+    width: 451px;
+    height: 451px;
+    margin: auto;
+    position: relative; }
+    .wayboo .wayboo_top .wayboo_round > div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .wayboo .wayboo_top .wayboo_round > div h3 {
+        font-weight: 700;
+        font-size: 24px; }
+      .wayboo .wayboo_top .wayboo_round > div p {
+        color: #06cbf5;
+        font-size: 14px;
+        padding-bottom: 10px; }
+      .wayboo .wayboo_top .wayboo_round > div h1 {
+        font-weight: bold;
+        font-size: 50px; }
+    .wayboo .wayboo_top .wayboo_round .round {
+      animation: spin 5s infinite linear; }
+  .wayboo .wayboo_top .wayboo_bottom {
+    width: 860px;
+    margin: auto;
+    color: #06cbf5; }
+    .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist {
+      float: left;
+      width: 33.3%;
+      text-align: center;
+      padding-top: 60px; }
+      .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist p {
+        text-align: center; }
+      .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 28px; }
+        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div i {
+          display: inline-block;
+          width: 1px;
+          height: 18px;
+          background: rgba(255, 255, 255, 0.3);
+          margin: 0 15px; }
+        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div span {
+          font-size: 36px;
+          font-weight: bold; }
+  .wayboo .wayboo_middle {
+    width: 1200px;
+    margin: auto;
+    background: #213350;
+    padding: 65px 0;
+    margin-top: 70px; }
+    .wayboo .wayboo_middle .wayboo_map {
+      padding: 0 74px; }
+      .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft {
+        float: left; }
+        .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft > h1 {
+          font-weight: bold;
+          font-size: 35px;
+          color: #fff; }
+        .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft > p {
+          font-size: 14px;
+          padding: 40px 0 30px;
+          color: rgba(255, 255, 255, 0.3); }
+        .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft .wayboo_maplist {
+          color: rgba(255, 255, 255, 0.3);
+          width: 290px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 30px; }
+          .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft .wayboo_maplist > div {
+            width: 240px;
+            height: 6px;
+            border-radius: 2000px;
+            background: #46596d;
+            position: relative;
+            overflow: hidden; }
+            .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft .wayboo_maplist > div > p {
+              width: 80%;
+              height: 100%;
+              transition: all 0.5s;
+              background: #05a6c6;
+              background: -webkit-linear-gradient(left, #ce14ff, #05a6c6);
+              background: -o-linear-gradient(right, #ce14ff, #05a6c6);
+              background: -moz-linear-gradient(right, #ce14ff, #05a6c6);
+              background: linear-gradient(to right, #ce14ff, #05a6c6); }
+      .wayboo .wayboo_middle .wayboo_map .wayboo_mapRight {
+        float: right;
+        width: 700px;
+        height: 460px; }
+    .wayboo .wayboo_middle .wayboo_exposure {
+      padding: 70px  74px 45px;
+      background: #1e304d; }
+      .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft {
+        float: left;
+        width: 555px; }
+        .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft > h1 {
+          font-weight: bold;
+          font-size: 35px;
+          color: #fff; }
+        .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft > p {
+          font-size: 14px;
+          padding: 40px 0 30px;
+          color: rgba(255, 255, 255, 0.3); }
+        .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft .wayboo_exposureimg {
+          height: 265px;
+          background-image: url(../img/tu.png);
+          background-repeat: no-repeat;
+          background-position: 210px 0px; }
+          .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft .wayboo_exposureimg h1 {
+            font-weight: bold;
+            font-size: 50px;
+            color: #0d95ff; }
+      .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureRight {
+        float: right;
+        width: 450px;
+        padding-top: 30px; }
+        .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureRight ul {
+          width: 100%; }
+          .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureRight ul li {
+            float: left;
+            width: 219px;
+            height: 120px;
+            background: #0c92fc;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin-right: 1px;
+            margin-bottom: 1px; }
+            .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureRight ul li p {
+              font-size: 30px;
+              font-weight: bold;
+              color: #fff; }
+    .wayboo .wayboo_middle .wayboo_click {
+      padding: 73px 74px 64px;
+      background: #1b2c49; }
+      .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft {
+        float: left; }
+        .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft > h1 {
+          font-weight: bold;
+          font-size: 35px;
+          color: #fff;
+          margin-bottom: 28px; }
+        .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft > p {
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.3); }
+        .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft i {
+          display: block;
+          width: 50px;
+          height: 2px;
+          background: rgba(255, 255, 255, 0.5);
+          margin: 25px 0; }
+        .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft > h3 {
+          font-size: 53px;
+          color: #6fdeff;
+          font-weight: bold; }
+        .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft > .h3 {
+          color: #f5303f; }
+      .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight {
+        float: right;
+        position: relative; }
+        .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #areaAbt {
+          width: 560px;
+          height: 25px;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+          margin-left: 34px;
+          position: absolute;
+          top: -4px;
+          display: flex;
+          z-index: 10; }
+          .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #areaAbt button {
+            padding: 0;
+            margin: 0;
+            height: 25px;
+            width: 70px;
+            border: none;
+            border-bottom: 1px solid #25344e;
+            background: #25344e;
+            color: rgba(255, 255, 255, 0.8);
+            cursor: pointer;
+            outline: none; }
+          .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #areaAbt .areaAbtactive {
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-bottom: none; }
+        .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #area {
+          width: 660px;
+          height: 350px; }
+    .wayboo .wayboo_middle .wayboo_deal {
+      padding: 50px 74px;
+      background: #1d304b; }
+      .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkLeft {
+        padding: 100px 0;
+        float: left; }
+        .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkLeft > h1 {
+          font-weight: bold;
+          font-size: 35px;
+          color: #fff;
+          margin-bottom: 28px; }
+        .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkLeft > p {
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.3); }
+        .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkLeft > h3 {
+          font-size: 53px;
+          color: #2d8ef9;
+          font-weight: bold; }
+      .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkRight {
+        width: 600px;
+        height: 360px;
+        float: right; }
+    .wayboo .wayboo_middle .wayboo_table {
+      padding: 50px 0;
+      background: #162744; }
+      .wayboo .wayboo_middle .wayboo_table > div {
+        padding: 0 24px;
+        width: 49%;
+        float: left;
+        border-right: 1px solid #20324f; }
+        .wayboo .wayboo_middle .wayboo_table > div h1 {
+          text-align: center;
+          padding: 10px;
+          background: #1e2f4c;
+          font-size: 16px;
+          color: rgba(255, 255, 255, 0.8);
+          font-weight: bold; }
+        .wayboo .wayboo_middle .wayboo_table > div .tableOne, .wayboo .wayboo_middle .wayboo_table > div .tableTow {
+          height: 370px;
+          overflow: hidden; }
+        .wayboo .wayboo_middle .wayboo_table > div table {
+          width: 100%;
+          text-align: center; }
+          .wayboo .wayboo_middle .wayboo_table > div table thead tr th {
+            color: #2d8ef9;
+            padding: 30px 0 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+            z-index: 10;
+            background: #162744; }
+        .wayboo .wayboo_middle .wayboo_table > div .tableOne table tbody tr th {
+          width: 108px;
+          height: 68px;
+          text-overflow: inherit;
+          overflow: hidden;
+          padding: 13px 0;
+          color: #708eae; }
+        .wayboo .wayboo_middle .wayboo_table > div .tableTow table tbody tr th {
+          width: 290px;
+          height: 68px;
+          text-overflow: inherit;
+          overflow: hidden;
+          padding: 13px 0;
+          color: #708eae; }
+    .wayboo .wayboo_middle .wayboo_partner {
+      padding: 70px 74px 0;
+      background: #1d2f4c; }
+      .wayboo .wayboo_middle .wayboo_partner > h1 {
+        font-weight: bold;
+        font-size: 35px;
+        color: #fff;
+        margin-bottom: 28px; }
+      .wayboo .wayboo_middle .wayboo_partner > ul {
+        width: 100%;
+        margin-top: 60px;
+        border-right: 1px solid rgba(255, 255, 255, 0.1); }
+        .wayboo .wayboo_middle .wayboo_partner > ul li {
+          float: left;
+          width: 209px;
+          height: 90px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          justify-content: center;
+          border-left: 1px solid rgba(255, 255, 255, 0.1); }
+
+/*# sourceMappingURL=index.css.map */
