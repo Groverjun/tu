@@ -222,7 +222,7 @@ body{
                 }
                 >p{
                     font-size: 14px;
-                    color: rgba(255,255,255,0.3);
+                    color: #7b99bb;
 //                  padding-bottom: 10px;
                 }
                 i{
@@ -267,6 +267,7 @@ body{
                     }
                     .areaAbtactive{
                         border: 1px solid #364e6d;
+                        background: none;
                         border-bottom: none;
                         color: #fff;
                     }
@@ -292,7 +293,7 @@ body{
                 }
                 >p{
                     font-size: 14px;
-                    color: rgba(255,255,255,0.3);
+                    color: #7b99bb;
                 }
                 >h3{
                     font-size: 53px;
@@ -365,7 +366,8 @@ body{
                     text-overflow: inherit;
                     overflow: hidden;
                     padding: 13px 0;
-                    color: #708eae;
+                    font-size: 14px;
+                    color: #7c99c0;
                 }
                 .tableTow table  tbody tr th{
                      width: 290px;

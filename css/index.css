@@ -185,7 +185,7 @@ body {
           margin-bottom: 28px; }
         .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft > p {
           font-size: 14px;
-          color: rgba(255, 255, 255, 0.3); }
+          color: #7b99bb; }
         .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft i {
           display: block;
           width: 50px;
@@ -223,6 +223,7 @@ body {
             outline: none; }
           .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #areaAbt .areaAbtactive {
             border: 1px solid #364e6d;
+            background: none;
             border-bottom: none;
             color: #fff; }
         .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #area {
@@ -241,7 +242,7 @@ body {
           margin-bottom: 28px; }
         .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkLeft > p {
           font-size: 14px;
-          color: rgba(255, 255, 255, 0.3); }
+          color: #7b99bb; }
         .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkLeft > h3 {
           font-size: 53px;
           color: #2d8ef9;
@@ -300,7 +301,8 @@ body {
           text-overflow: inherit;
           overflow: hidden;
           padding: 13px 0;
-          color: #708eae; }
+          font-size: 14px;
+          color: #7c99c0; }
         .wayboo .wayboo_middle .wayboo_table > div .tableTow table tbody tr th {
           width: 290px;
           height: 68px;
