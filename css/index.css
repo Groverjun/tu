@@ -28,6 +28,9 @@ body {
 .wayboo {
   width: 1200px;
   margin: auto; }
+  .wayboo .logo {
+    padding-top: 30px;
+    padding-bottom: 30px; }
   .wayboo .wayboo_top {
     padding-bottom: 70px; }
     .wayboo .wayboo_top .wayboo_round {
@@ -53,10 +56,11 @@ body {
         .wayboo .wayboo_top .wayboo_round > div p {
           color: #06cbf5;
           font-size: 14px;
+          padding-top: 5px;
           padding-bottom: 10px; }
         .wayboo .wayboo_top .wayboo_round > div h1 {
           font-weight: bold;
-          font-size: 50px; }
+          font-size: 70px; }
       .wayboo .wayboo_top .wayboo_round .round {
         animation: spin 5s infinite linear; }
     .wayboo .wayboo_top .wayboo_bottom {
@@ -291,7 +295,7 @@ body {
             color: #3c7beb;
             font-size: 14px;
             padding: 30px 0 10px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(133, 130, 130, 0.1);
             position: relative;
             z-index: 10;
             background: #162744; }
@@ -321,7 +325,7 @@ body {
       .wayboo .wayboo_middle .wayboo_partner > ul {
         width: 100%;
         margin-top: 60px;
-        border-right: 1px solid rgba(255, 255, 255, 0.1); }
+        border-right: 1px solid rgba(133, 130, 130, 0.1); }
         .wayboo .wayboo_middle .wayboo_partner > ul li {
           float: left;
           width: 175px;
@@ -329,8 +333,8 @@ body {
           text-align: center;
           display: flex;
           align-items: center;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          border-bottom: 1px solid rgba(133, 130, 130, 0.1);
           justify-content: center;
-          border-left: 1px solid rgba(255, 255, 255, 0.1); }
+          border-left: 1px solid rgba(133, 130, 130, 0.1); }
 
 /*# sourceMappingURL=index.css.map */
