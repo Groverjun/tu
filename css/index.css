@@ -96,7 +96,8 @@ body {
     .wayboo .wayboo_middle .wayboo_map {
       padding: 0 74px; }
       .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft {
-        float: left; }
+        float: left;
+        padding-bottom: 70px; }
         .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft > h1 {
           font-weight: bold;
           font-size: 35px;
@@ -133,7 +134,7 @@ body {
         width: 700px;
         height: 460px; }
     .wayboo .wayboo_middle .wayboo_exposure {
-      padding: 70px  74px 45px;
+      padding: 70px  74px 70px;
       background: #1e304d; }
       .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft {
         float: left;
@@ -178,7 +179,7 @@ body {
               font-weight: bold;
               color: #fff; }
     .wayboo .wayboo_middle .wayboo_click {
-      padding: 73px 74px 64px;
+      padding: 73px 74px 10px;
       background: #1b2c49; }
       .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft {
         float: left; }
@@ -317,7 +318,7 @@ body {
           font-size: 14px;
           color: #708eae; }
     .wayboo .wayboo_middle .wayboo_partner {
-      padding: 70px 74px 65px;
+      padding: 70px 74px 80px;
       background: #1d2f4c; }
       .wayboo .wayboo_middle .wayboo_partner > h1 {
         font-weight: bold;
