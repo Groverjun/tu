@@ -32,15 +32,6 @@
 	}
 
 })(jQuery);
-//$('.tableOne').myScroll({
-//	speed:30, //数值越大，速度越慢
-//	rowHeight:47 //li的高度
-//});
-//$('.tableTow').myScroll({
-//	speed:30, //数值越大，速度越慢
-//	rowHeight:47 //li的高度
-//});
-
 //地图
 $('#document').ready(function(){
 	 getEcharts();
@@ -278,7 +269,7 @@ areaoption = {
 				    colorStops: [{
 				        offset: 0, color: 'rgba(244,47,163,0.8)' // 0% 处的颜色
 				    }, {
-				        offset: 1, color: 'rgba(0, 204, 255,0.5)' // 100% 处的颜色
+				        offset: 1, color: 'rgba(0, 204, 255,0.2)' // 100% 处的颜色
 				    }],
 				    globalCoord: false // 缺省为 false
 				}
@@ -290,6 +281,16 @@ if (areaoption && typeof areaoption === "object") {
     areamyChart.setOption(areaoption, true);
 }
 window.onresize = areaoption.resize;
+
+
+//$('.tableOne').myScroll({
+//	speed:30, //数值越大，速度越慢
+//	rowHeight:47 //li的高度
+//});
+//$('.tableTow').myScroll({
+//	speed:30, //数值越大，速度越慢
+//	rowHeight:47 //li的高度
+//});
 
 /*点击切换折线图数据**/
 

@@ -14,7 +14,10 @@
     zoom: 1;
 }
 body{
-    background: #020d33;
+    background-color: #041436;
+    background-image: url(../img/topbg.jpg);
+    background-repeat: no-repeat;
+    
 }
 .wayboo *{
     margin: 0;
@@ -28,7 +31,6 @@ body{
     width: 1200px;
     margin: auto;
     .wayboo_top{
-        background: url(../img/topbg.jpg) no-repeat;
         padding-bottom: 70px;
         .wayboo_round{
             width: 451px;
@@ -101,7 +103,7 @@ body{
         width: 1200px;
         margin:auto;
         background: #213350;
-        padding: 65px 0;
+        padding: 65px 0 0;
 //      margin-top: 70px;
         .wayboo_map{
             padding: 0 74px;
@@ -309,7 +311,7 @@ body{
                 >ul{
                     float: left;
                     li{
-                        margin-bottom: 37px;
+                        margin-bottom: 30px;
                         font-size: 12px;
                         color: #7893b9;
                         i{
@@ -334,7 +336,7 @@ body{
                 border-right: 1px solid #20324f;
                 h1{
                     text-align: center;
-                    padding: 10px;
+                    padding:20px;
                     background: #1e2f4c;
                     font-size: 16px;
                     color: rgba(255,255,255,0.8);
@@ -348,9 +350,10 @@ body{
                     width: 100%;
                     text-align: center;
                     thead tr th{
-                        color:#2d8ef9 ;
+                        color:#3c7beb ;
+                        font-size: 14px;
                         padding: 30px 0 10px;
-                        border-bottom: 1px solid rgba(255,255,255,0.2);
+                        border-bottom: 1px solid rgba(255,255,255,0.1);
                         position: relative;
                         z-index: 10;
                         background: #162744;
@@ -376,7 +379,7 @@ body{
         }
         //
         .wayboo_partner{
-            padding: 70px 74px 0;
+            padding: 70px 74px 65px;
             background: #1d2f4c;
             >h1{
                     font-weight: bold;
