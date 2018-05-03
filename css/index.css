@@ -104,14 +104,14 @@ body {
         .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft > p {
           font-size: 14px;
           padding: 40px 0 30px;
-          color: rgba(255, 255, 255, 0.3); }
+          color: #7b99bb; }
         .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft .wayboo_maplist {
           color: rgba(255, 255, 255, 0.3);
           width: 290px;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          margin-bottom: 30px; }
+          margin-bottom: 25px; }
           .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft .wayboo_maplist > div {
             width: 240px;
             height: 6px;
@@ -145,7 +145,7 @@ body {
         .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft > p {
           font-size: 14px;
           padding: 40px 0 30px;
-          color: rgba(255, 255, 255, 0.3); }
+          color: #7b99bb; }
         .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft .wayboo_exposureimg {
           height: 265px;
           background-image: url(../img/tu.png);
@@ -192,9 +192,9 @@ body {
           color: #7b99bb; }
         .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft i {
           display: block;
-          width: 50px;
-          height: 2px;
-          background: rgba(255, 255, 255, 0.5);
+          width: 30px;
+          height: 1px;
+          background: rgba(255, 255, 255, 0.1);
           margin: 25px 0; }
         .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft > h3 {
           font-size: 53px;
@@ -207,7 +207,7 @@ body {
         position: relative; }
         .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #areaAbt {
           width: 560px;
-          height: 25px;
+          height: 27px;
           border-bottom: 1px solid #364e6d;
           margin-left: 34px;
           position: absolute;
@@ -284,7 +284,8 @@ body {
           background: #1e2f4c;
           font-size: 16px;
           color: rgba(255, 255, 255, 0.8);
-          font-weight: bold; }
+          font-weight: bold;
+          letter-spacing: 3px; }
         .wayboo .wayboo_middle .wayboo_table > div .tableOne, .wayboo .wayboo_middle .wayboo_table > div .tableTow {
           height: 370px;
           overflow: hidden; }
@@ -313,6 +314,7 @@ body {
           text-overflow: inherit;
           overflow: hidden;
           padding: 13px 0;
+          font-size: 14px;
           color: #708eae; }
     .wayboo .wayboo_middle .wayboo_partner {
       padding: 70px 74px 65px;

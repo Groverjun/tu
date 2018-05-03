@@ -75,7 +75,7 @@ require(
 							borderColor:"#213350",/**线条颜色*/
 							borderWidth:1,/**线条宽*/
 							areaStyle:{
-								color: 'rgba(255,255,255,0.2)',/**地图颜色*/
+								color: 'rgba(255,255,255,0.1)',/**地图颜色*/
 							}
 						},
 						emphasis:{
