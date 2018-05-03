@@ -153,35 +153,38 @@ require(
 }
 //饼图
 var data=[
-                {value:10, name:'机械设备'},
-                {value:5, name:'建筑器材'},
-                {value:15, name:'能源化工'},
-                {value:25, name:'五金电子'},
-                {value:20, name:'农林牧渔'},
-                {value:35, name:'企业服务'},
-                {value:30, name:'生活服务'},
-                {value:40, name:'其它'}
+                {value:30, name:'机械设备 30%'},
+                {value:20, name:'建筑器材 20%'},
+                {value:17, name:'能源化工 17%'},
+                {value:16, name:'五金电子 16%'},
+                {value:9, name:'农林牧渔 9%'},
+                {value:6, name:'企业服务 6%'},
+                {value:2, name:'生活服务 2%'},
+                {value:1, name:'其它 1%'}
             ]
-var pie = document.getElementById("pie");
-var PieyChart = echarts.init(pie);
+//var pie = document.getElementById("pie");
+//var PieyChart = echarts.init(pie);
 var app = {};
 optionpie = null;
 optionpie = {
     tooltip : {
         trigger: 'item',
         formatter: function (params,ticket,callback){
-	           return params.name+params.value+"%"
+	           return params.name
 	    },
     },
     legend: {
-        x : 'right',
+        x : '80%',
         y : 'top',
-        itemGap:20,
+        itemGap:30,
+        itemHeight:12,
+        itemWidth:18,
         textStyle:{
-        	color: '#6C86AA'
+        	color: '#6C86AA',
+        	padding: [0, 0,0, 10]
         },
         orient: 'vertical',
-        data:['机械设备','建筑器材','能源化工','五金电子','农林牧渔','企业服务','生活服务','其它']
+        data:['机械设备 30%','建筑器材 20%','能源化工 17%','五金电子 16%','农林牧渔 9%','企业服务 6%','生活服务 2%','其它 1%']
     },
     toolbox: {
         show : false,
@@ -191,8 +194,8 @@ optionpie = {
         {
             name:'半径模式',
             type:'pie',
-            radius : [20, 150],
-            center : ['50%', '50%'],
+            radius : [55, 250],
+            center : ['35%', '50%'],
             roseType : 'radius',
             label: {
                 normal: {
@@ -209,9 +212,9 @@ optionpie = {
 };
 ;
 if (optionpie && typeof optionpie === "object") {
-    PieyChart.setOption(optionpie, true);
+//  PieyChart.setOption(optionpie, true);
 }
-window.onresize = PieyChart.resize;
+//window.onresize = PieyChart.resize;
 
 //折线图
 var areaChart = document.getElementById("area");
@@ -223,9 +226,14 @@ areaoption = {
     xAxis: {
         type: 'category',
         boundaryGap: false,
+        offset:0,
+        axisTick:{show: false,},
+        nameTextStyle:{
+        	padding: [20, 0, 0, 0]
+        },
         axisLine:{
             lineStyle:{
-                color:'rgba(255,255,255,0.4)',
+                color:'#647c9d',
                  width:0,
             }
         } ,
@@ -235,16 +243,18 @@ areaoption = {
 	    {
 	    	name:"",
             type : 'value',
+            axisTick:{show: false},
+            offset:12,
             splitLine:{
             	show: true,
             	lineStyle: {
             		type:"dotted",
-			        color: ['rgba(255,255,255,0.4)']
+			        color: ['#647c9d']
 			    }
             },
             axisLine:{
                 lineStyle:{
-                    color:'rgba(255,255,255,0.4)',
+                    color:'#647c9d',
                      width:0,
                 }
             } ,
@@ -266,9 +276,9 @@ areaoption = {
 				    x2: 0,
 				    y2: 1,
 				    colorStops: [{
-				        offset: 0, color: '#f2303b' // 0% 处的颜色
+				        offset: 0, color: 'rgba(244,47,163,0.8)' // 0% 处的颜色
 				    }, {
-				        offset: 1, color: 'rgba(26, 43, 72, 1)' // 100% 处的颜色
+				        offset: 1, color: 'rgba(0, 204, 255,0.5)' // 100% 处的颜色
 				    }],
 				    globalCoord: false // 缺省为 false
 				}
