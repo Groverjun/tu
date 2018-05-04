@@ -15,7 +15,8 @@
 body {
   background-color: #041436;
   background-image: url(../img/topbg.jpg);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  font-family: arial; }
 
 .wayboo * {
   margin: 0;
@@ -380,10 +381,15 @@ body {
         font-size: 50px;
         text-align: center; }
     .wayboo .wayboo_middle {
-      width: 100%; }
+      width: 100%;
+      padding: 0; }
       .wayboo .wayboo_middle .wayboo_map {
+        width: 100%;
         padding: 0 10px;
+        padding: 30px 0 50px 0;
         text-align: center; }
+        .wayboo .wayboo_middle .wayboo_map h1 {
+          padding-bottom: 20px; }
         .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft {
           width: 100%;
           margin-bottom: 0;
@@ -428,6 +434,8 @@ body {
           width: 100%;
           padding-bottom: 20px;
           text-align: center; }
+          .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft i {
+            margin: 20px auto; }
         .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight {
           width: 100%; }
           .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #areaAbt {
@@ -458,7 +466,8 @@ body {
             float: none;
             display: flex;
             flex-flow: wrap;
-            margin-top: 10px; }
+            margin-top: 30px;
+            margin-bottom: 20px; }
             .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkRight > ul li {
               width: 50%;
               text-align: left;
