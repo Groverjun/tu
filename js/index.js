@@ -137,17 +137,17 @@ $(window).scroll(function(){
    		$(".wayboo_maplist").eq(5).find("p").width("100%")
    		$(".wayboo_maplist").eq(6).find("p").width("80%")
     });
-    if($(window).width()<=768){
-    	if(moneyNumstrat){
-		    rolling(".money",100,function(){
-		    	moneyNumstrat=false
-				var Number=17046;
-				countUp($(".money"),Number,2000,function(elem,endVal){
-			    	$(elem).html(toThousands(endVal))
-			    });
-			});
-		}
-    }
+//  if($(window).width()<=768){
+//  	if(moneyNumstrat){
+//		    rolling(".money",100,function(){
+//		    	moneyNumstrat=false
+//				var Number=17046;
+//				countUp($(".money"),Number,2000,function(elem,endVal){
+//			    	$(elem).html(toThousands(endVal))
+//			    });
+//			});
+//		}
+//  }
     if(exposureNumstrat){
 	    rolling(".exposureNum",100,function(){
 	    	exposureNumstrat=false
