@@ -337,6 +337,8 @@ body {
 
 @media (max-width: 768px) {
   body {
+    width: 100%;
+    overflow-x: hidden;
     background-position: -860px 0px; }
 
   .wayboo {
@@ -396,7 +398,7 @@ body {
           height: 300px; }
       .wayboo .wayboo_middle .wayboo_exposure {
         width: 100%;
-        padding: 0 10px; }
+        padding: 50px  10px; }
         .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft {
           width: 100%;
           text-align: center; }
@@ -419,7 +421,7 @@ body {
                 width: 100%; }
       .wayboo .wayboo_middle .wayboo_click {
         width: 100%;
-        padding: 0 10px; }
+        padding: 50px 0px 50px 10px; }
         .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft {
           width: 100%;
           padding-bottom: 20px;
@@ -427,11 +429,11 @@ body {
         .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight {
           width: 100%; }
           .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #areaAbt {
-            width: 100%;
+            width: 93%;
             padding: 0;
             margin: 0; }
           .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #area {
-            width: 100%; }
+            width: 103%; }
       .wayboo .wayboo_middle .wayboo_deal {
         width: 100%;
         padding: 0 10px; }
@@ -462,7 +464,7 @@ body {
               padding-left: 30px; }
       .wayboo .wayboo_middle .wayboo_table {
         width: 100%;
-        padding: 0; }
+        padding: 50px 0; }
         .wayboo .wayboo_middle .wayboo_table table {
           table-layout: fixed;
           width: 100%; }
@@ -481,7 +483,8 @@ body {
           padding: 0 0px; }
         .wayboo .wayboo_middle .wayboo_table .wayboo_tableRight {
           width: 100%;
-          padding: 0 5px; }
+          padding: 0 5px;
+          margin-top: 50px; }
       .wayboo .wayboo_middle .wayboo_partner {
         width: 100%;
         padding: 30px 10px;

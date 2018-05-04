@@ -415,6 +415,8 @@ body{
 }
 @media(max-width:768px){
     body{
+        width: 100%;
+        overflow-x: hidden;
         background-position: -860px 0px;
     }
     .wayboo{
@@ -485,7 +487,7 @@ body{
            }
            .wayboo_exposure{
                width: 100%;
-               padding: 0 10px;
+               padding: 50px  10px;
                .wayboo_exposureLeft{
                    width: 100%;
                    text-align: center;
@@ -520,7 +522,7 @@ body{
            }
            .wayboo_click{
                width: 100%;
-               padding: 0 10px;
+               padding: 50px 0px 50px 10px;
                .wayboo_clickLeft{
                    width: 100%;
                    padding-bottom: 20px;
@@ -529,12 +531,12 @@ body{
                .wayboo_clickRight{
                    width: 100%;
                    #areaAbt{
-                       width: 100%;
+                       width:93%;
                        padding: 0;
                        margin: 0;
                    }
                    #area{
-                       width: 100%;
+                       width: 103%;
                    }
                }
            }
@@ -575,7 +577,7 @@ body{
            }
            .wayboo_table {
                width: 100%;
-               padding: 0;
+               padding:50px 0;
                table{
                     table-layout: fixed;
                     width: 100%;
@@ -593,6 +595,8 @@ body{
                         white-space: nowrap;
                         text-overflow: ellipsis;
                 }
+                > div .tableTow{
+                }
                .wayboo_tableLeft{
                    width: 100%;
                    padding: 0 0px;
@@ -600,6 +604,8 @@ body{
                .wayboo_tableRight{
                    width: 100%;
                     padding: 0 5px;
+                    margin-top: 50px;
+                  
                }
            }
            .wayboo_partner{
