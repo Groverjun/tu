@@ -109,7 +109,7 @@ $("#areaAbt button").click(function(){
 //数据滚动效果
 $(document).ready(function() {
 	rolling(".roundNum",100,function(){
-		var Number=9464;
+		var Number=35257483;
 	    countUp($(".roundNum"),Number,1500,function(elem,endVal){
 	    	$(elem).html(toThousands(endVal))
 	    });

@@ -32,7 +32,7 @@ body {
     padding-top: 30px;
     padding-bottom: 30px; }
   .wayboo .wayboo_top {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     margin-top: -25px; }
     .wayboo .wayboo_top .wayboo_mTxt {
       display: none; }
@@ -69,7 +69,7 @@ body {
     .wayboo .wayboo_top .wayboo_bottom {
       width: 100%;
       margin: auto;
-      padding-top: 70px;
+      padding-top: 30px;
       text-align: center; }
       .wayboo .wayboo_top .wayboo_bottom .txt {
         font-size: 38px;
@@ -336,6 +336,9 @@ body {
           border-left: 1px solid rgba(133, 130, 130, 0.1); }
 
 @media (max-width: 768px) {
+  body {
+    background-position: -860px 0px; }
+
   .wayboo {
     width: 100%; }
     .wayboo .logo {
@@ -347,10 +350,10 @@ body {
       display: block;
       margin-top: 80px; }
       .wayboo .wayboo_top .wayboo_mTxt h1 {
-        font-size: 80px;
+        font-size: 45px;
         font-weight: bold; }
       .wayboo .wayboo_top .wayboo_mTxt p {
-        font-size: 30px;
+        font-size: 25px;
         letter-spacing: 10px;
         padding: 10px 0 15px; }
     .wayboo .wayboo_top .wayboo_round {
@@ -370,7 +373,7 @@ body {
         padding-left: 5px; }
       .wayboo .wayboo_top .wayboo_bottom .money {
         display: block;
-        font-size: 70px;
+        font-size: 50px;
         text-align: center; }
     .wayboo .wayboo_middle {
       width: 100%; }
@@ -397,6 +400,8 @@ body {
         .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft {
           width: 100%;
           text-align: center; }
+          .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft h1 {
+            font-size: 40px; }
           .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft p {
             padding: 10px 0 20px; }
           .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft .wayboo_exposureimg {
@@ -408,6 +413,10 @@ body {
           .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureRight ul li {
             width: 49%;
             background: #283c5c; }
+            .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureRight ul li div {
+              width: 90px; }
+              .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureRight ul li div img {
+                width: 100%; }
       .wayboo .wayboo_middle .wayboo_click {
         width: 100%;
         padding: 0 10px; }
@@ -440,7 +449,7 @@ body {
             margin: 0;
             margin-top: 20px; }
             .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkRight > p img {
-              width: 100%; }
+              width: 80%; }
           .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkRight > ul {
             float: none;
             display: flex;
@@ -489,6 +498,6 @@ body {
             width: 25%;
             height: 50px; }
             .wayboo .wayboo_middle .wayboo_partner > ul li img {
-              width: 80%; } }
+              width: 70%; } }
 
 /*# sourceMappingURL=index.css.map */
