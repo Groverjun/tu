@@ -16,7 +16,9 @@ body {
   background-color: #041436;
   background-image: url(../img/topbg.jpg);
   background-repeat: no-repeat;
-  font-family: arial; }
+  font-family: arial;
+  margin: 0;
+  padding: 0; }
 
 .wayboo * {
   margin: 0;
@@ -287,6 +289,7 @@ body {
           letter-spacing: 3px; }
         .wayboo .wayboo_middle .wayboo_table > div .tableOne, .wayboo .wayboo_middle .wayboo_table > div .tableTow {
           height: 370px;
+          margin-top: 15px;
           overflow: hidden; }
         .wayboo .wayboo_middle .wayboo_table > div table {
           width: 100%;
@@ -339,13 +342,18 @@ body {
           border-bottom: none; }
 
 @media (max-width: 768px) {
+  html {
+    width: 100%;
+    overflow-x: hidden; }
+
   body {
     width: 100%;
     overflow-x: hidden;
     background-position: -860px 0px; }
 
   .wayboo {
-    width: 100%; }
+    width: 100%;
+    overflow-x: hidden; }
     .wayboo .logo {
       padding: 10px 0 25px;
       display: none; }

@@ -18,7 +18,8 @@ body{
     background-image: url(../img/topbg.jpg);
     background-repeat: no-repeat;
     font-family: arial;
-    
+    margin: 0;
+    padding: 0;
 }
 .wayboo *{
     margin: 0;
@@ -350,6 +351,7 @@ body{
                 }
                 .tableOne,.tableTow{
                     height: 370px;
+                    margin-top: 15px;
                     overflow: hidden;
                 }
                 table{
@@ -417,6 +419,10 @@ body{
     }
 }
 @media(max-width:768px){
+    html{
+         width: 100%;
+        overflow-x: hidden;
+    }
     body{
         width: 100%;
         overflow-x: hidden;
@@ -424,6 +430,7 @@ body{
     }
     .wayboo{
         width: 100%;
+        overflow-x: hidden;
         .logo{
             padding: 10px 0 25px;
             display: none;
