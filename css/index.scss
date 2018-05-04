@@ -409,6 +409,9 @@ body{
                     justify-content: center;
                     border-left: 1px solid rgba(133, 130, 130, 0.1);
                 }
+                .bottom{
+                    border-bottom: none;
+                }
             }
         }
     }
@@ -628,6 +631,8 @@ body{
                            width: 70%;
                        }
                    }
+                   .Mbottom{border-bottom: 1px solid rgba(133, 130, 130, 0.1);}
+                   .Lborder{border-left: none;}
                }
            }
        }

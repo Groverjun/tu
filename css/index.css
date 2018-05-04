@@ -334,6 +334,8 @@ body {
           border-bottom: 1px solid rgba(133, 130, 130, 0.1);
           justify-content: center;
           border-left: 1px solid rgba(133, 130, 130, 0.1); }
+        .wayboo .wayboo_middle .wayboo_partner > ul .bottom {
+          border-bottom: none; }
 
 @media (max-width: 768px) {
   body {
@@ -501,6 +503,10 @@ body {
             width: 25%;
             height: 50px; }
             .wayboo .wayboo_middle .wayboo_partner > ul li img {
-              width: 70%; } }
+              width: 70%; }
+          .wayboo .wayboo_middle .wayboo_partner > ul .Mbottom {
+            border-bottom: 1px solid rgba(133, 130, 130, 0.1); }
+          .wayboo .wayboo_middle .wayboo_partner > ul .Lborder {
+            border-left: none; } }
 
 /*# sourceMappingURL=index.css.map */
