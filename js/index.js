@@ -110,16 +110,20 @@ $("#areaAbt button").click(function(){
 $(document).ready(function() {
 	rolling(".roundNum",100,function(){
 		var Number=35257483;
+		var Number2=17046;
 	    countUp($(".roundNum"),Number,1500,function(elem,endVal){
 	    	$(elem).html(toThousands(endVal))
 	    });
-	});
-	rolling(".money",100,function(){
-		var Number=17046;
-	    countUp($(".money"),Number,1500,function(elem,endVal){
+	    countUp($(".money"),Number2,1500,function(elem,endVal){
 	    	$(elem).html(toThousands(endVal))
 	    });
 	});
+//	rolling(".money",100,function(){
+//		var Number=17046;
+//	    countUp($(".money"),Number,1500,function(elem,endVal){
+//	    	$(elem).html(toThousands(endVal))
+//	    });
+//	});
 }); 
 
 //数据滚动
