@@ -67,23 +67,32 @@ body {
       .wayboo .wayboo_top .wayboo_round .round {
         animation: spin 5s infinite linear; }
     .wayboo .wayboo_top .wayboo_bottom {
-      width: 100%;
+      width: 860px;
       margin: auto;
-      padding-top: 70px;
-      text-align: center; }
-      .wayboo .wayboo_top .wayboo_bottom .txt {
-        font-size: 38px;
-        color: #3d9dd7;
-        font-weight: bold;
-        padding-left: 24px; }
-      .wayboo .wayboo_top .wayboo_bottom i {
-        font-size: 38px;
-        color: #3d9dd7;
-        padding: 0 30px; }
-      .wayboo .wayboo_top .wayboo_bottom .money {
-        font-size: 44px;
-        color: #08cefe;
-        font-weight: bold; }
+      color: #06cbf5; }
+      .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist {
+        float: left;
+        width: 33.3%;
+        text-align: center;
+        padding-top: 60px; }
+        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist .img {
+          display: none; }
+        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist p {
+          text-align: center; }
+        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-right: 28px; }
+          .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div i {
+            display: inline-block;
+            width: 1px;
+            height: 18px;
+            background: rgba(255, 255, 255, 0.3);
+            margin: 0 15px; }
+          .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div span {
+            font-size: 36px;
+            font-weight: bold; }
   .wayboo .wayboo_middle {
     width: 1200px;
     margin: auto;
@@ -119,7 +128,7 @@ body {
             .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft .wayboo_maplist > div > p {
               width: 80%;
               height: 100%;
-              transition: all 1s;
+              transition: all 0.5s;
               background: #05a6c6;
               background: -webkit-linear-gradient(left, #ce14ff, #05a6c6);
               background: -o-linear-gradient(right, #ce14ff, #05a6c6);
@@ -300,18 +309,20 @@ body {
             background: #162744; }
         .wayboo .wayboo_middle .wayboo_table > div .tableOne table tbody tr th {
           width: 108px;
+          height: 68px;
           text-overflow: inherit;
           overflow: hidden;
-          padding: 10px 0;
+          padding: 13px 0;
           font-size: 14px;
           color: #7c99c0; }
         .wayboo .wayboo_middle .wayboo_table > div .tableTow table tbody tr th {
           width: 290px;
+          height: 68px;
           text-overflow: inherit;
           overflow: hidden;
-          padding: 10px 0;
+          padding: 13px 0;
           font-size: 14px;
-          color: #7c99c0; }
+          color: #708eae; }
     .wayboo .wayboo_middle .wayboo_partner {
       padding: 70px 74px 80px;
       background: #1d2f4c; }
@@ -362,16 +373,16 @@ body {
         font-size: 40px; }
     .wayboo .wayboo_top .wayboo_bottom {
       width: 100%; }
-      .wayboo .wayboo_top .wayboo_bottom i {
-        display: none; }
-      .wayboo .wayboo_top .wayboo_bottom .txt {
-        font-weight: normal;
-        font-size: 32px;
-        padding-left: 5px; }
-      .wayboo .wayboo_top .wayboo_bottom .money {
-        display: block;
-        font-size: 70px;
-        text-align: center; }
+      .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist .img {
+        display: block; }
+      .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div {
+        padding: 0; }
+        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div i {
+          display: none; }
+        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div img {
+          display: none; }
+        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div span {
+          display: block; }
     .wayboo .wayboo_middle {
       width: 100%; }
       .wayboo .wayboo_middle .wayboo_map {

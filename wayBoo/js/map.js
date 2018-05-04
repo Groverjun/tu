@@ -115,5 +115,41 @@ var arrmap = {
 	'青岛': [120.4651, 36.3373],
 	'韶关': [113.7964, 24.7028]
 }
+var AllName=[
+	{name: '北京' },
+	{name: '上海' },
+	{name: '哈尔滨' },
+	{name: '长春',},
+	{name: '沈阳',},
+	{name: '大连',},
+	{name: '天津',},
+	{name: '石家庄',},
+	{name: '保定' },
+	{name: '沧州' },
+	{name: '邯郸' },
+	{name: '唐山',},
+	{name: '济南',},
+	{name: '烟台',},
+	{name: '郑州',},
+	{name: '南京',},
+	{name: '苏州' },
+	{name: '无锡' },
+	{name: '南通' },
+	{name: '西安',},
+	{name: '重庆',},
+	{name: '成都',},
+	{name: '昆明',},
+	{name: '厦门',},
+]
 
-
+//
+var data=[
+    {value:10, name:'rose1'},
+    {value:5, name:'rose2'},
+    {value:15, name:'rose3'},
+    {value:25, name:'rose4'},
+    {value:20, name:'rose5'},
+    {value:35, name:'rose6'},
+    {value:30, name:'rose7'},
+    {value:40, name:'rose8'}
+]
