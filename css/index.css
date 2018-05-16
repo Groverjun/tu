@@ -16,6 +16,7 @@ body {
   background-color: #041436;
   background-image: url(../img/topbg.jpg);
   background-repeat: no-repeat;
+  font-family: "微软雅黑";
   font-family: arial;
   margin: 0;
   padding: 0; }
@@ -391,10 +392,12 @@ body {
       text-align: center;
       color: #fff;
       display: block;
-      margin-top: 55px; }
+      margin-top: 55px;
+      padding-left: 7px; }
       .wayboo .wayboo_top .wayboo_mTxt h1 {
         font-size: 45px;
-        font-weight: bold; }
+        font-weight: bold;
+        padding-right: 5px; }
       .wayboo .wayboo_top .wayboo_mTxt p {
         font-size: 25px;
         letter-spacing: 10px;
