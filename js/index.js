@@ -76,7 +76,7 @@ var piedata=[
 ]
 var pieName=['机械设备 30%','建筑器材 20%','能源化工 17%','五金电子 16%','农林牧渔 9%','企业服务 6%','生活服务 2%','其它 1%'];
 //折线图
-var areaAata=[20, 40, 30, 60, 50];
+var areaAata=[2000000, 4000000, 300000, 600000, 500000];
 var coordinateX=['03-01', '03-08', '03-15', '03-22', '03-30'];
 
 /*点击切换折线图数据**/
@@ -190,14 +190,14 @@ $(window).scroll(function(){
 }); 
 
 //表格数据滚动
-$('.tableOne').myScroll({
-	speed:80, //数值越大，速度越慢
-	rowHeight:39 //li的高度
-});
-$('.tableTow').myScroll({
-	speed:80, //数值越大，速度越慢
-	rowHeight:39 //li的高度
-});
+//$('.tableOne').myScroll({
+//	speed:80, //数值越大，速度越慢
+//	rowHeight:39 //li的高度
+//});
+//$('.tableTow').myScroll({
+//	speed:80, //数值越大，速度越慢
+//	rowHeight:39 //li的高度
+//});
 
 
 
@@ -245,7 +245,7 @@ function countUp(elem, endVal,duration,fun) {
 function getEcharts(){
     require.config({
         paths: {
-            echarts: './js'
+            echarts: 'a'
     }
 });
 require(
@@ -441,7 +441,14 @@ areaoption = {
                      width:0,
                 }
             } ,
-            axisLabel:{formatter:'{value}w'}
+            axisLabel:{formatter:  function (value, index) {
+            	var val=value+''
+            	if(val.length>4){
+            		return val.substring(0,val.length-4)+'w'
+            	}else{
+            		return value
+            	}
+			}}
        }
        
     ],

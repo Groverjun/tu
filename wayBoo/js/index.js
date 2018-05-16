@@ -1,3 +1,4 @@
+//
 (function($){
 	$.fn.myScroll = function(options){
 	//默认配置
@@ -36,7 +37,194 @@
 $('#document').ready(function(){
 	 getEcharts();
 });
-// 地图填充背景，不能直接用路径
+var mapName=[
+	{name: '北京'},
+	{name: '上海'},
+	{name: '长春'},
+	{name: '沈阳'},
+	{name: '大连'},
+	{name: '天津'},
+	{name: '保定'},
+	{name: '沧州'},
+	{name: '邯郸'},
+	{name: '唐山'},
+	{name: '济南'},
+	{name: '烟台'},
+	{name: '郑州'},
+	{name: '南京'},
+	{name: '苏州'},
+	{name: '无锡'},
+	{name: '南通'},
+	{name: '西安'},
+	{name: '重庆'},
+	{name: '成都'},
+	{name: '昆明'},
+	{name: '厦门'},
+	{name: '石家庄'},
+	{name: '哈尔滨'},
+]
+//饼图
+var piedata=[
+    {value:30, name:'机械设备 30%'},
+    {value:20, name:'建筑器材 20%'},
+    {value:17, name:'能源化工 17%'},
+    {value:16, name:'五金电子 16%'},
+    {value:9, name:'农林牧渔 9%'},
+    {value:6, name:'企业服务 6%'},
+    {value:2, name:'生活服务 2%'},
+    {value:1, name:'其它 1%'}
+]
+var pieName=['机械设备 30%','建筑器材 20%','能源化工 17%','五金电子 16%','农林牧渔 9%','企业服务 6%','生活服务 2%','其它 1%'];
+//折线图
+var areaAata=[20, 40, 30, 60, 50];
+var coordinateX=['03-01', '03-08', '03-15', '03-22', '03-30'];
+
+/*点击切换折线图数据**/
+$("#areaAbt button").click(function(){
+	var index=$(this).index()
+	if(index==0){
+		//近一月
+		areaAata=[20, 40, 30, 60, 50];
+		coordinateX=['03-01', '03-08', '03-15', '03-22', '03-30'];
+	}else if(index==1){
+		//近三月
+		areaAata=[20, 40, 30];
+		coordinateX=['1月', '二月', '三月'];
+	}else if(index==2){
+		//近六月
+		areaAata=[20, 40, 30,80,100,120];
+		coordinateX=['十月','十一月','十二月','一月', '二月', '三月'];
+	}else if(index==3){
+		//近六月
+		areaAata=[20,40,30,80,100,120,20,40,30,80,100,120];
+		coordinateX=['201704','201705','201706','201707','201708','201709','201710','201711','201712','201801', '201802', '201803'];
+	}
+	areaoption.xAxis.data=coordinateX;
+	areaoption.series[0].data=areaAata;
+	areamyChart.setOption(areaoption, true);
+	$(this).addClass("areaAbtactive").siblings().removeClass("areaAbtactive")
+})
+
+
+//数据滚动效果
+$(document).ready(function() {
+	rolling(".roundNum",100,function(){
+		var Number=35257483;
+		var Number2=17046;
+	    countUp($(".roundNum"),Number,1500,function(elem,endVal){
+	    	$(elem).html(toThousands(endVal))
+	    });
+	    countUp($(".money"),Number2,1500,function(elem,endVal){
+	    	$(elem).html(toThousands(endVal))
+	    });
+	});
+}); 
+
+//数据滚动
+var exposureNumstrat=true;
+var clickNumstrat=true;
+var dealNumstrat=true;
+var moneyNumstrat=true;
+$(window).scroll(function(){  
+    rolling(".wayboo_maplist",300,function(){
+   		$(".wayboo_maplist").eq(0).find("p").width("50%")
+   		$(".wayboo_maplist").eq(1).find("p").width("60%")
+   		$(".wayboo_maplist").eq(2).find("p").width("70%")
+   		$(".wayboo_maplist").eq(3).find("p").width("80%")
+   		$(".wayboo_maplist").eq(4).find("p").width("90%")
+   		$(".wayboo_maplist").eq(5).find("p").width("100%")
+   		$(".wayboo_maplist").eq(6).find("p").width("80%")
+    });
+    if(exposureNumstrat){
+	    rolling(".exposureNum",100,function(){
+	    	exposureNumstrat=false
+			var Number=626455896;
+			countUp($(".exposureNum"),Number,2000,function(elem,endVal){
+		    	$(elem).html(toThousands(endVal))
+		    });
+		});
+	}
+    if(clickNumstrat){
+	    rolling(".clickNum1",100,function(){
+	    	clickNumstrat=false
+			var Number=1195;
+			var Number2=253284;
+			if (areaoption && typeof areaoption === "object") {
+			    areamyChart.setOption(areaoption, true);
+			}
+			window.onresize = areaoption.resize;
+			countUp($(".clickNum1"),Number,500,function(elem,endVal){
+		    	$(elem).html(toThousands(endVal))
+		    });
+		    countUp($(".clickNum2"),Number2,1000,function(elem,endVal){
+		    	$(elem).html(toThousands(endVal))
+		    });
+		});
+	}
+    if(dealNumstrat){
+	    rolling(".dealNum",100,function(){
+	    	dealNumstrat=false
+			var Number=651284652;
+			countUp($(".dealNum"),Number,1000,function(elem,endVal){
+		    	$(elem).html(toThousands(endVal))
+		    });
+		});
+	}
+}); 
+
+//表格数据滚动
+//$('.tableOne').myScroll({
+//	speed:80, //数值越大，速度越慢
+//	rowHeight:39 //li的高度
+//});
+//$('.tableTow').myScroll({
+//	speed:80, //数值越大，速度越慢
+//	rowHeight:39 //li的高度
+//});
+
+
+
+//函数区
+function rolling(div,offset,fun){  
+    var a,b,c,d;  
+    d=$(div).offset().top;  
+    a=eval(d + offset);  
+    b=$(window).scrollTop();   
+    c=$(window).height();  
+    if(b+c>a){  
+    	  fun() 
+    }  
+} 
+function toThousands(num) {  
+    var result = [ ], counter = 0, html='';  
+    num = (num || 0).toString().split('');  
+    for (var i = num.length - 1; i >= 0; i--) {  
+        counter++;  
+        result.unshift(num[i]);  
+        if (!(counter % 3) && i != 0) { result.unshift(','); }  
+    }
+    return result.join('');  
+}
+function countUp(elem, endVal,duration,fun) {
+	var startTime = 0;
+	var dec = Math.pow(10, 0);
+	var progress,value;
+	var i=0
+	function startCount(timestamp) {
+		startTime = !startTime ? timestamp : startTime;
+		progress = timestamp - startTime;
+		value = 0 + (endVal - 0) * (progress / duration);
+		value = (value > endVal) ? endVal : value;
+		value = Math.floor(value*dec) / dec;
+		elem.html(value.toFixed(0))
+		if(progress<duration && requestAnimationFrame(startCount)){
+		}else{
+			fun(elem,endVal)
+		}
+	}
+	requestAnimationFrame(startCount)
+}
+// 地图
 function getEcharts(){
     require.config({
         paths: {
@@ -100,7 +288,7 @@ require(
 							show: true,
 							shadowBlur : 0
 						},
-						data : AllName
+						data : mapName
 					}
 				},
 				{
@@ -134,7 +322,7 @@ require(
 									label:{show:false}
 								}
 							},
-							data :AllName
+							data :mapName
 						}
 					}
 				]
@@ -143,16 +331,6 @@ require(
 	});
 }
 //饼图
-var data=[
-                {value:30, name:'机械设备 30%'},
-                {value:20, name:'建筑器材 20%'},
-                {value:17, name:'能源化工 17%'},
-                {value:16, name:'五金电子 16%'},
-                {value:9, name:'农林牧渔 9%'},
-                {value:6, name:'企业服务 6%'},
-                {value:2, name:'生活服务 2%'},
-                {value:1, name:'其它 1%'}
-            ]
 //var pie = document.getElementById("pie");
 //var PieyChart = echarts.init(pie);
 var app = {};
@@ -175,7 +353,7 @@ optionpie = {
         	padding: [0, 0,0, 10]
         },
         orient: 'vertical',
-        data:['机械设备 30%','建筑器材 20%','能源化工 17%','五金电子 16%','农林牧渔 9%','企业服务 6%','生活服务 2%','其它 1%']
+        data:pieName
     },
     toolbox: {
         show : false,
@@ -196,7 +374,7 @@ optionpie = {
                     show: false
                 }
             },
-            data:data
+            data:piedata
         },
     ],
     color: ['#15b0fd','#407bec','#7160f9','#9b41fe','#b629fc','#ae0abe','#bd2381','#c4265c']
@@ -206,12 +384,9 @@ if (optionpie && typeof optionpie === "object") {
 //  PieyChart.setOption(optionpie, true);
 }
 //window.onresize = PieyChart.resize;
-
 //折线图
 var areaChart = document.getElementById("area");
 var areamyChart = echarts.init(areaChart);
-var areaAata=[20, 40, 30, 60, 50];
-var coordinateX=['03-01', '03-08', '03-15', '03-22', '03-30'];
 areaoption = null;
 areaoption = {
     xAxis: {
@@ -277,112 +452,6 @@ areaoption = {
     },
     ]
 };
-if (areaoption && typeof areaoption === "object") {
-    areamyChart.setOption(areaoption, true);
-}
-window.onresize = areaoption.resize;
+//函数结束
 
 
-//$('.tableOne').myScroll({
-//	speed:30, //数值越大，速度越慢
-//	rowHeight:47 //li的高度
-//});
-//$('.tableTow').myScroll({
-//	speed:30, //数值越大，速度越慢
-//	rowHeight:47 //li的高度
-//});
-
-/*点击切换折线图数据**/
-
-$("#areaAbt button").click(function(){
-	var index=$(this).index()
-	if(index==0){
-		//近一月
-		areaAata=[20, 40, 30, 60, 50];
-		coordinateX=['03-01', '03-08', '03-15', '03-22', '03-30'];
-	}else if(index==1){
-		//近三月
-		areaAata=[20, 40, 30];
-		coordinateX=['1月', '二月', '三月'];
-	}else if(index==2){
-		//近六月
-		areaAata=[20, 40, 30,80,100,120];
-		coordinateX=['十月','十一月','十二月','一月', '二月', '三月'];
-	}else if(index==3){
-		//近六月
-		areaAata=[20,40,30,80,100,120,20,40,30,80,100,120];
-		coordinateX=['201704','201705','201706','201707','201708','201709','201710','201711','201712','201801', '201802', '201803'];
-	}
-	areaoption.xAxis.data=coordinateX;
-	areaoption.series[0].data=areaAata;
-	areamyChart.setOption(areaoption, true);
-	$(this).addClass("areaAbtactive").siblings().removeClass("areaAbtactive")
-})
-
-
-//数据滚动效果
-var start=true
-var mainOffsetTop = $(".wayboo_bottomlist span").offset().top;
-var mainHeight = $(".wayboo_bottomlist span").height();
-var winHeight = $(window).height();
-window.onload=function(){
-
-}
-$(window).scroll(function(){
-	if(start==true){
-    	var winScrollTop = $(window).scrollTop();
-        if(winScrollTop > mainOffsetTop + mainHeight || winScrollTop <　mainOffsetTop - winHeight){
-        }else{
-        	start=false
-            var num1 = 1452
-            var num2 = 1578
-            var num3 = 5697
-            var num4 = 25778663
-            var num5=624825344
-            var xr_1 =$('.tel')
-            var xr_2 =$('.txt1')
-            var xr_3 =$('.txt2')
-            var xr_4 =$(".roundNum")
-            var xr_5 =$(".exposureNum")
-            countUp(xr_1, num1, 0, 1000,0,function(){});
-            countUp(xr_2, num2, 0, 1000,0,function(){});
-            countUp(xr_3, num3, 0, 1000,0,function(){});
-            countUp(xr_4, num4, 0, 1000,0,function(id){
-            	$(".roundNum").html(toThousands(25778663))
-            });
-            countUp(xr_5, num5, 0, 1000,200,function(id){
-            	$(".exposureNum").html(toThousands(624825344))
-            });
-//          return false
-        }
-    }
-})
-
-function countUp(elem, endVal, startVal, duration, decimal,fun) {
-	var startTime = 0;
-	var dec = Math.pow(10, decimal);
-	var progress,value;
-	function startCount(timestamp) {
-		startTime = !startTime ? timestamp : startTime;
-		progress = timestamp - startTime;
-		value = startVal + (endVal - startVal) * (progress / duration);
-		value = (value > endVal) ? endVal : value;
-		value = Math.floor(value*dec) / dec;
-		elem.html(value.toFixed(decimal))
-		progress < duration && requestAnimationFrame(startCount)
-	}
-	requestAnimationFrame(startCount)
-	setTimeout(function(){
-		fun(elem)
-	},1000)
-}
-function toThousands(num) {  
-    var result = [ ], counter = 0, html='';  
-    num = (num || 0).toString().split('');  
-    for (var i = num.length - 1; i >= 0; i--) {  
-        counter++;  
-        result.unshift(num[i]);  
-        if (!(counter % 3) && i != 0) { result.unshift(','); }  
-    }
-    return result.join('');  
-}  

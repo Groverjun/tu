@@ -15,7 +15,10 @@
 body {
   background-color: #041436;
   background-image: url(../img/topbg.jpg);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  font-family: arial;
+  margin: 0;
+  padding: 0; }
 
 .wayboo * {
   margin: 0;
@@ -32,7 +35,7 @@ body {
     padding-top: 30px;
     padding-bottom: 30px; }
   .wayboo .wayboo_top {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     margin-top: -25px; }
     .wayboo .wayboo_top .wayboo_mTxt {
       display: none; }
@@ -67,32 +70,23 @@ body {
       .wayboo .wayboo_top .wayboo_round .round {
         animation: spin 5s infinite linear; }
     .wayboo .wayboo_top .wayboo_bottom {
-      width: 860px;
+      width: 100%;
       margin: auto;
-      color: #06cbf5; }
-      .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist {
-        float: left;
-        width: 33.3%;
-        text-align: center;
-        padding-top: 60px; }
-        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist .img {
-          display: none; }
-        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist p {
-          text-align: center; }
-        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding-right: 28px; }
-          .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div i {
-            display: inline-block;
-            width: 1px;
-            height: 18px;
-            background: rgba(255, 255, 255, 0.3);
-            margin: 0 15px; }
-          .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div span {
-            font-size: 36px;
-            font-weight: bold; }
+      padding-top: 30px;
+      text-align: center; }
+      .wayboo .wayboo_top .wayboo_bottom .txt {
+        font-size: 38px;
+        color: #3d9dd7;
+        font-weight: bold;
+        padding-left: 24px; }
+      .wayboo .wayboo_top .wayboo_bottom i {
+        font-size: 38px;
+        color: #3d9dd7;
+        padding: 0 30px; }
+      .wayboo .wayboo_top .wayboo_bottom .money {
+        font-size: 44px;
+        color: #08cefe;
+        font-weight: bold; }
   .wayboo .wayboo_middle {
     width: 1200px;
     margin: auto;
@@ -128,7 +122,7 @@ body {
             .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft .wayboo_maplist > div > p {
               width: 80%;
               height: 100%;
-              transition: all 0.5s;
+              transition: all 1s;
               background: #05a6c6;
               background: -webkit-linear-gradient(left, #ce14ff, #05a6c6);
               background: -o-linear-gradient(right, #ce14ff, #05a6c6);
@@ -295,10 +289,14 @@ body {
           letter-spacing: 3px; }
         .wayboo .wayboo_middle .wayboo_table > div .tableOne, .wayboo .wayboo_middle .wayboo_table > div .tableTow {
           height: 370px;
+          margin-top: 15px;
           overflow: hidden; }
         .wayboo .wayboo_middle .wayboo_table > div table {
           width: 100%;
-          text-align: center; }
+          text-align: center;
+          table-layout: fixed;
+          background: #162744;
+          border: none; }
           .wayboo .wayboo_middle .wayboo_table > div table thead tr th {
             color: #3c7beb;
             font-size: 14px;
@@ -306,23 +304,28 @@ body {
             border-bottom: 1px solid rgba(133, 130, 130, 0.1);
             position: relative;
             z-index: 10;
-            background: #162744; }
+            background: #162744;
+            background: #162744;
+            border: none; }
         .wayboo .wayboo_middle .wayboo_table > div .tableOne table tbody tr th {
           width: 108px;
-          height: 68px;
           text-overflow: inherit;
           overflow: hidden;
-          padding: 13px 0;
+          padding: 10px 0;
           font-size: 14px;
-          color: #7c99c0; }
+          color: #7c99c0;
+          background: #162744;
+          border: none; }
         .wayboo .wayboo_middle .wayboo_table > div .tableTow table tbody tr th {
-          width: 290px;
-          height: 68px;
           text-overflow: inherit;
           overflow: hidden;
-          padding: 13px 0;
+          padding: 10px 0;
           font-size: 14px;
-          color: #708eae; }
+          color: #7c99c0;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          background: #162744;
+          border: none; }
     .wayboo .wayboo_middle .wayboo_partner {
       padding: 70px 74px 80px;
       background: #1d2f4c; }
@@ -345,10 +348,42 @@ body {
           border-bottom: 1px solid rgba(133, 130, 130, 0.1);
           justify-content: center;
           border-left: 1px solid rgba(133, 130, 130, 0.1); }
+        .wayboo .wayboo_middle .wayboo_partner > ul .bottom {
+          border-bottom: none; }
+
+.wayboo_PcTxt {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-left: 29px; }
+
+.wayboo_PcTxt h1 {
+  text-align: center;
+  font-size: 58px;
+  font-weight: bold;
+  padding-right: 14px; }
+
+.wayboo_PcTxt p {
+  letter-spacing: 20px;
+  font-size: 28px;
+  padding: 10px 0; }
 
 @media (max-width: 768px) {
+  html {
+    width: 100%;
+    overflow-x: hidden; }
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    background-position: -860px 0px; }
+
+  .wayboo_PcTxt {
+    display: none; }
+
   .wayboo {
-    width: 100%; }
+    width: 100%;
+    overflow-x: hidden; }
     .wayboo .logo {
       padding: 10px 0 25px;
       display: none; }
@@ -356,14 +391,14 @@ body {
       text-align: center;
       color: #fff;
       display: block;
-      margin-top: 80px; }
+      margin-top: 55px; }
       .wayboo .wayboo_top .wayboo_mTxt h1 {
-        font-size: 80px;
+        font-size: 45px;
         font-weight: bold; }
       .wayboo .wayboo_top .wayboo_mTxt p {
-        font-size: 30px;
+        font-size: 25px;
         letter-spacing: 10px;
-        padding: 10px 0 15px; }
+        padding: 0px 0 39px; }
     .wayboo .wayboo_top .wayboo_round {
       width: 300px;
       height: 300px; }
@@ -372,22 +407,28 @@ body {
       .wayboo .wayboo_top .wayboo_round > div h1 {
         font-size: 40px; }
     .wayboo .wayboo_top .wayboo_bottom {
-      width: 100%; }
-      .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist .img {
-        display: block; }
-      .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div {
-        padding: 0; }
-        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div i {
-          display: none; }
-        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div img {
-          display: none; }
-        .wayboo .wayboo_top .wayboo_bottom > .wayboo_bottomlist > div span {
-          display: block; }
-    .wayboo .wayboo_middle {
-      width: 100%; }
-      .wayboo .wayboo_middle .wayboo_map {
-        padding: 0 10px;
+      width: 100%;
+      padding-top: 44px; }
+      .wayboo .wayboo_top .wayboo_bottom i {
+        display: none; }
+      .wayboo .wayboo_top .wayboo_bottom .txt {
+        font-weight: normal;
+        font-size: 26px;
+        padding-left: 5px; }
+      .wayboo .wayboo_top .wayboo_bottom .money {
+        display: block;
+        font-size: 50px;
         text-align: center; }
+    .wayboo .wayboo_middle {
+      width: 100%;
+      padding: 0; }
+      .wayboo .wayboo_middle .wayboo_map {
+        width: 100%;
+        padding: 0 10px;
+        padding: 30px 0 50px 0;
+        text-align: center; }
+        .wayboo .wayboo_middle .wayboo_map h1 {
+          padding-bottom: 20px; }
         .wayboo .wayboo_middle .wayboo_map .wayboo_mapLeft {
           width: 100%;
           margin-bottom: 0;
@@ -404,10 +445,12 @@ body {
           height: 300px; }
       .wayboo .wayboo_middle .wayboo_exposure {
         width: 100%;
-        padding: 0 10px; }
+        padding: 50px  10px; }
         .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft {
           width: 100%;
           text-align: center; }
+          .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft h1 {
+            font-size: 40px; }
           .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft p {
             padding: 10px 0 20px; }
           .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureLeft .wayboo_exposureimg {
@@ -419,21 +462,27 @@ body {
           .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureRight ul li {
             width: 49%;
             background: #283c5c; }
+            .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureRight ul li div {
+              width: 90px; }
+              .wayboo .wayboo_middle .wayboo_exposure .wayboo_exposureRight ul li div img {
+                width: 100%; }
       .wayboo .wayboo_middle .wayboo_click {
         width: 100%;
-        padding: 0 10px; }
+        padding: 50px 0px 50px 10px; }
         .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft {
           width: 100%;
           padding-bottom: 20px;
           text-align: center; }
+          .wayboo .wayboo_middle .wayboo_click .wayboo_clickLeft i {
+            margin: 20px auto; }
         .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight {
           width: 100%; }
           .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #areaAbt {
-            width: 100%;
+            width: 93%;
             padding: 0;
             margin: 0; }
           .wayboo .wayboo_middle .wayboo_click .wayboo_clickRight #area {
-            width: 100%; }
+            width: 103%; }
       .wayboo .wayboo_middle .wayboo_deal {
         width: 100%;
         padding: 0 10px; }
@@ -451,20 +500,21 @@ body {
             margin: 0;
             margin-top: 20px; }
             .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkRight > p img {
-              width: 100%; }
+              width: 80%; }
           .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkRight > ul {
             float: none;
             display: flex;
             flex-flow: wrap;
-            margin-top: 10px; }
+            margin-top: 30px;
+            margin-bottom: 20px; }
             .wayboo .wayboo_middle .wayboo_deal .wayboo_dealkRight > ul li {
               width: 50%;
               text-align: left;
               margin-bottom: 20px;
-              padding-left: 30px; }
+              padding-left: 37px; }
       .wayboo .wayboo_middle .wayboo_table {
         width: 100%;
-        padding: 0; }
+        padding: 50px 0; }
         .wayboo .wayboo_middle .wayboo_table table {
           table-layout: fixed;
           width: 100%; }
@@ -483,7 +533,8 @@ body {
           padding: 0 0px; }
         .wayboo .wayboo_middle .wayboo_table .wayboo_tableRight {
           width: 100%;
-          padding: 0 5px; }
+          padding: 0 5px;
+          margin-top: 50px; }
       .wayboo .wayboo_middle .wayboo_partner {
         width: 100%;
         padding: 30px 10px;
@@ -500,6 +551,10 @@ body {
             width: 25%;
             height: 50px; }
             .wayboo .wayboo_middle .wayboo_partner > ul li img {
-              width: 80%; } }
+              width: 70%; }
+          .wayboo .wayboo_middle .wayboo_partner > ul .Mbottom {
+            border-bottom: 1px solid rgba(133, 130, 130, 0.1); }
+          .wayboo .wayboo_middle .wayboo_partner > ul .Lborder {
+            border-left: none; } }
 
 /*# sourceMappingURL=index.css.map */
